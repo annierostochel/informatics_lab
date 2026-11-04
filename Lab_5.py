@@ -16,6 +16,7 @@ for i in range(len(S)):
         print("Исходная строка", S)
         print("Изменённая строка", d)
         break
+
 # n = input()
 # print(n[-2:])
 # print(n[2:])
@@ -24,3 +25,16 @@ for i in range(len(S)):
 #     print("no")
 # else:
 #     print("yes")
+
+# Задание 2
+s = list(input("Введите предложение ").split())
+if 1 < len(s) < 31:
+    for i in range(len(s)):
+        if len(list(s[i])) < 2 or len(list(s[i])) > 10:
+            print("Ошибка, текст не соответстувует условию")
+            break
+        else :
+            if s[i] != s[-1]:
+                print(s[i])
+else:
+    print("Ошибка, текст не соответствует условию")
